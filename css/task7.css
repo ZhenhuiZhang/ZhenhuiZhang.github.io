@@ -1,0 +1,11 @@
+*{margin:0;padding:0;}
+body{font-family: 'Microsoft YaHei';}
+
+
+header{height:58px;}
+.logo{height:58px;position:relative}
+.logo img{height:80%;margin:6px 10px 0 57px;}
+.logo h1{position:absolute;width:3em;padding:6px;height:58px;display: inline-block;font-weight: 500;}
+.nav{height:58px;display: inline-block;position: absolute;right:8em;}
+.nav li{padding:10px 20px;list-style: none;display: inline-block;font-size: 18px;color:#999999}
+.login{position: absolute;right: 66px;padding:10px 0px;font-size: 18px;color:#e95e5c}

@@ -1,4 +1,4 @@
-# 《前端学习，练习》---by ZhenhuiZhang.github.io
+# 《前端学习，练习》---by ZhenhuiZhang
 
 ## 第一部分
 

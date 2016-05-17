@@ -61,11 +61,11 @@ header .date{position:absolute;right:0;top:43px;height:61px;color:#d45d5c;font-f
 .script .rightDown{width: 458px;height: 318px;position: absolute;right:0;top:290px;background: #eeeed6;;}
 .script .rightDown ul{margin-top: 20px;}
 .script .rightDown ul li{color:#5a5b5b;font-family: "宋体";font-size: 16px;margin:16px auto;list-style: inside;list-style-type:square;width:90%}
-.script .rightDown .rightDownBox{width: 260px;height:160px;background:#d55d5c;position: absolute;bottom: 0;left: 0;display: -ms-flex;display: -webkit-flex;display: flex;-ms-flex-align: center;-webkit-align-items: center;-webkit-box-align: center;align-items: center;}
-.script .rightDown .rightDownBox h3{color: #FFFFFF;float: left;margin-left:5px;font-weight: normal;}
-.script .rightDown .rightDownBox .line{float: left;height: 86px;margin-left:35px;border-left: 2px solid #FFFFFF;}
+.script .rightDown .rightDownBox{width: 260px;height:160px;background:#d55d5c;position: absolute;bottom: 0;left: 0;}
+.script .rightDown .rightDownBox h3{color: #FFFFFF;float: left;margin-left:5px;font-weight: normal;display: inline;}
+.script .rightDown .rightDownBox .line{float: left;height: 86px;top:15px;margin:0 0 0 35px;border-left: 2px solid #FFFFFF;margin-top:30px;}
 .script .rightDown .rightDownBox .firstH3{font-size: 110px;}
-.script .rightDown .rightDownBox .secondH3{font-size: 21px;margin-top:3px}
+.script .rightDown .rightDownBox .secondH3{font-size: 21px;margin-top:3px;width:120px;margin-top:30px;}
 /*script end*/
 
 /*footer*/

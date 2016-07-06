@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="margin: 20px auto;width: 1400px;">
+              <canvas id="canvas1" style="width:640px;height:360px;margin: 0 auto;border: 1px solid #aaa;"></canvas>
+<!--        <input type="range" id="scale-range" min="0.5" max="3.0" step="0.01" value="0.5" style="display: block;margin: 20px auto;"/>-->
+        <canvas id="canvas2" style="width:640px;height:360px;margin: 0 auto;border: 1px solid #aaa;"></canvas>
+        </div>
+        <div style="text-align: center;margin-top:50px;font-size:20px;">
+            <a href="javascript:greyEffect()">Grey Effect</a>
+            <a href="javascript:blackEffect()">Black&White Effect</a>
+            <a href="javascript:reverseEffect()">reverseEffect</a>
+        </div>
+        <script>
+            var can=document.getElementById("canvas1");
+            var context=can.getContext("2d");
+            var img=new Image();
+            var can2=document.getElementById("canvas2");
+            var context2=can2.getContext("2d");
+        
+            window.onload=function(){
+            img.src="./img/5.jpg";   
+            img.onload=function(){
+                context.drawImage(img,0,0,can.width,can.height);
+            }
+            }
+            function greyEffect(){
+                var imageData=context.getImageData(0,0,can.width,can.height);
+                var pixelData=imageData.data;
+                for(var i=0;i<can2.width*can2.height;i++){
+                    var r=pixelData[i*4+0];
+                    var g=pixelData[i*4+1];
+                    var b=pixelData[i*4+2];
+                    
+                    var grey=r*0.3+g*0.59+b*0.11;
+                    pixelData[i*4+0]=grey;
+                    pixelData[i*4+1]=grey;
+                    pixelData[i*4+2]=grey;
+                }
+                context2.putImageData(imageData,0,0,0,0,can2.width,can2.height);
+            }
+            function blackEffect(){
+                var imageData=context.getImageData(0,0,can.width,can.height);
+                var pixelData=imageData.data;
+                for(var i=0;i<can2.width*can2.height;i++){
+                    var r=pixelData[i*4+0];
+                    var g=pixelData[i*4+1];
+                    var b=pixelData[i*4+2];
+                    
+                    var grey=r*0.3+g*0.59+b*0.11;
+                    if(grey>255/2){
+                        v=255
+                    }else{
+                        v=0
+                    }
+                    pixelData[i*4+0]=v;
+                    pixelData[i*4+1]=v;
+                    pixelData[i*4+2]=v;
+                }
+                context2.putImageData(imageData,0,0,0,0,can2.width,can2.height);
+            }
+            function reverseEffect(){
+                 var imageData=context.getImageData(0,0,can.width,can.height);
+                var pixelData=imageData.data;
+                for(var i=0;i<can2.width*can2.height;i++){
+                    var r=pixelData[i*4+0];
+                    var g=pixelData[i*4+1];
+                    var b=pixelData[i*4+2];
+                    
+                    pixelData[i*4+0]=255-r;
+                    pixelData[i*4+1]=255-g;
+                    pixelData[i*4+2]=255-b;
+                }
+                context2.putImageData(imageData,0,0,0,0,can2.width,can2.height);
+            }
+        </script>
+    </body>
+</html>

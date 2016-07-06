@@ -40,9 +40,11 @@ body{font-family: 'Microsoft YaHei';}
 .newWorldMain .logo img{height:50%;margin:12px 10px 0 57px;display: inline;float:left;}
 .newWorldMain .logo h1{font-size:22px;position:absolute;width:3em;padding:12px 5px;height:58px;display: inline-block;font-weight: 400;}
 .newWorldMain .nav{height:58px;display: inline-block;position: absolute;right:8em;}
-.newWorldMain .nav li{padding:15px 20px;list-style: none;display: inline-block;font-size: 18px;color:#999999}
+.newWorldMain .nav li{width:100px;height:100%;margin:0 5px;list-style: none;display: inline-block;font-size: 18px;}
+.newWorldMain .nav li a{color:#999999;display: block;text-decoration: none;width:100%;height:92%;text-align: center;line-height:58px;}
+.newWorldMain .nav li a:hover{color:#e74f4d;border-bottom:4px solid #e74f4d;}
+.newWorldMain .nav li .active{color:#e74f4d;border-bottom:4px solid #e74f4d;}
 .newWorldMain .login{position: absolute;right: 66px;padding:15px 0px;font-size: 18px;color:#e95e5c}
-.newWorldMain .login span{}
 .newWorldMain .banner{width:100%;}
 .newWorldMain .banner_img{color:#FFFFFF;background: url(../img/mancity.jpg);width: 100%;height:680px;background-size:100% 680px;}
 .newWorldMain .banner_img h2{font-size: 60px;font-weight: bold;display: inline-block;margin:225px 0 0 110px;}
@@ -90,7 +92,6 @@ body{font-family: 'Microsoft YaHei';}
 .new_world_info .part_2 .button1{background:#e74f4d;color:#FFFFFF;border:1px solid #FFFFFF;width:170px;height:45px;font-size:16px;margin-top:15px}
 .new_world_info .part_2 .button2{background:#FFFFFF;color:#e74f4d;border:1px solid #e74f4d;width:170px;height:45px;font-size:16px;margin-top:15px}
 .new_world_info .part_2 .li1{background:#e74f4d;color:#FFFFFF}
-.new_world_info .part_2 .li2{}
 .new_world_info .part_2 .li3{width: 40%;background:url("../img/task3_img2.png") no-repeat;background-size:100% 520px;}
 
 .be_vounlenteer{text-align: center;clear:both;display:inline-block}

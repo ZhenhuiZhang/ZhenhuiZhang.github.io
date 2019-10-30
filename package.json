@@ -1,0 +1,19 @@
+{
+  "name": "zhenhuizhang.github.io",
+  "version": "1.0.0",
+  "description": "* 首页：(http://zhenhuizhang.github.io/index.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhenhuiZhang/ZhenhuiZhang.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhenhuiZhang/ZhenhuiZhang.github.io/issues"
+  },
+  "homepage": "https://github.com/ZhenhuiZhang/ZhenhuiZhang.github.io#readme"
+}

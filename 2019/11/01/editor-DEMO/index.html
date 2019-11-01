@@ -19,7 +19,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;pandao.github.io&#x2F;editor.md&#x2F;examples&#x2F;images&#x2F;4.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;pandao.github.io&#x2F;editor.md&#x2F;examples&#x2F;images&#x2F;8.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;pandao.github.io&#x2F;editor.md&#x2F;examples&#x2F;images&#x2F;7.jpg">
-<meta property="og:updated_time" content="2019-11-01T07:19:04.140Z">
+<meta property="og:updated_time" content="2019-11-01T07:35:54.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;pandao.github.io&#x2F;editor.md&#x2F;examples&#x2F;images&#x2F;4.jpg">
   
@@ -323,26 +323,11 @@
 </li>
 </ul>
 <h4 id="反斜杠-Escape"><a href="#反斜杠-Escape" class="headerlink" title="反斜杠 Escape"></a>反斜杠 Escape</h4><p>*literal asterisks*</p>
-<h3 id="科学公式-TeX-KaTeX"><a href="#科学公式-TeX-KaTeX" class="headerlink" title="科学公式 TeX(KaTeX)"></a>科学公式 TeX(KaTeX)</h3><p>$$E=mc^2$$</p>
-<p>行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。</p>
-<p>$$(\sqrt{3x-1}+(1+x)^2)$$</p>
-<p>$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$</p>
-<p>多行公式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\displaystyle</span><br><span class="line">\left( \sum\_&#123;k=1&#125;^n a\_k b\_k \right)^2</span><br><span class="line">\leq</span><br><span class="line">\left( \sum\_&#123;k=1&#125;^n a\_k^2 \right)</span><br><span class="line">\left( \sum\_&#123;k=1&#125;^n b\_k^2 \right)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\displaystyle </span><br><span class="line">    \frac&#123;1&#125;&#123;</span><br><span class="line">        \Bigl(\sqrt&#123;\phi \sqrt&#123;5&#125;&#125;-\phi\Bigr) e^&#123;</span><br><span class="line">        \frac25 \pi&#125;&#125; = 1+\frac&#123;e^&#123;-2\pi&#125;&#125; &#123;1+\frac&#123;e^&#123;-4\pi&#125;&#125; &#123;</span><br><span class="line">        1+\frac&#123;e^&#123;-6\pi&#125;&#125;</span><br><span class="line">        &#123;1+\frac&#123;e^&#123;-8\pi&#125;&#125;</span><br><span class="line">         &#123;1+\cdots&#125; &#125;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f(x) = \int_&#123;-\infty&#125;^\infty</span><br><span class="line">    \hat f(\xi)\,e^&#123;2 \pi i \xi x&#125;</span><br><span class="line">    \,d\xi</span><br></pre></td></tr></table></figure>
-
-<h3 id="绘制流程图-Flowchart"><a href="#绘制流程图-Flowchart" class="headerlink" title="绘制流程图 Flowchart"></a>绘制流程图 Flowchart</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 用户登陆</span><br><span class="line">op=&gt;operation: 登陆操作</span><br><span class="line">cond=&gt;condition: 登陆成功 Yes or No?</span><br><span class="line">e=&gt;end: 进入后台</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-
-<h3 id="绘制序列图-Sequence-Diagram"><a href="#绘制序列图-Sequence-Diagram" class="headerlink" title="绘制序列图 Sequence Diagram"></a>绘制序列图 Sequence Diagram</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Andrew-&gt;China: Says Hello </span><br><span class="line">Note right of China: China thinks\nabout it </span><br><span class="line">China--&gt;Andrew: How are you? </span><br><span class="line">Andrew-&gt;&gt;China: I am good thanks!</span><br></pre></td></tr></table></figure>
-
 <h3 id="End"><a href="#End" class="headerlink" title="End"></a>End</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/01/editor-DEMO/" data-id="ck2ftd0d20003jcu5afiveogg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/01/editor-DEMO/" data-id="ck2ftq8bq0003y4u56sube1hc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/README/" rel="tag">README</a></li></ul>

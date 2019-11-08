@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
     "serve:ashare": "cross-env env_config=ashare vue-cli-service serve",
     "build:ashare": "cross-env env_config=ashare vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -10,6 +12,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "compression-webpack-plugin": "^3.0.0",
+    "phaser": "^3.20.1",
     "vue": "^2.6.10",
     "vue-analytics": "^5.16.1",
     "vue-router": "^3.0.2",

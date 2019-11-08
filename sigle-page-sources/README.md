@@ -2,7 +2,12 @@
 * 文件组织
 
 ```shell
-├── ashare                     // 二维码注册的中间处理页
-├── rel                        // 澳门的线路跳转页
-├── third-party-redirect       // 游戏已经支付第三方跳转的处理中间页面
+```
+
+```shell
+# npm run serve --site=ashare开发命令,后面跟的参数是要指定的项目(或者通过环境变量env_config指定)
+npm run serve ashare
+
+# npm run build --site=ashare发布命令,后面跟的参数是要指定的项目(或者通过环境变量env_config指定)
+npm run build ashare
 ```

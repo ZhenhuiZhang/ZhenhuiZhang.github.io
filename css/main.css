@@ -24,7 +24,7 @@ body{font-family: 'Microsoft YaHei';}
 .contentHead span{padding-left:10px;margin-left:10px;border-left:2px solid #696c6c;font-size: 20px;}
 .alert{padding: 15px;margin-bottom: 20px;border: 1px solid #bce8f1;border-radius: 4px;}
 .task-list {overflow:hidden;padding: 20px 10px 0;margin-bottom: 20px;background: #f5f5f5;}
-.task-list .task {float: left;width: 23%;padding: 0 10px 20px;}
+.task-list .task {float: left;width: 23%;padding: 0 10px 20px;list-style: none;}
 .task-list .task a{text-decoration: none;}
 .task-list .task a:hover{background:#9ad2dc;}
 .task-list .task-content {display: block;padding: 5px;background: #fff;-webkit-box-shadow: 0 0 2px #949494;box-shadow: 0 0 2px #949494;}

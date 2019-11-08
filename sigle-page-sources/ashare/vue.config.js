@@ -1,6 +1,5 @@
 const commonPlugin = require('../common.plugin')
 
-
 const path = require('path')
 let _dirName = __dirname.split(path.sep).pop()
 
@@ -17,12 +16,9 @@ module.exports = {
     // console.log(config)
     if (process.env.NODE_ENV === 'production') {
       // 为生产环境修改配置...
-      return {
-        plugins: [
-          ...commonPlugin.prodPlugin
-        ]
-      }
+      return commonPlugin.prod
     } else {
+      return commonPlugin.dev
       // 为开发环境修改配置...
     }
   }

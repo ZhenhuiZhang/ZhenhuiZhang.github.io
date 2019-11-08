@@ -1,0 +1,56 @@
+{
+  "name": "electron-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve:ashare": "cross-env env_config=ashare vue-cli-service serve",
+    "build:ashare": "cross-env env_config=ashare vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "compression-webpack-plugin": "^3.0.0",
+    "vue": "^2.6.10",
+    "vue-analytics": "^5.16.1",
+    "vue-router": "^3.0.2",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "cross-env": "^5.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "G_BASE_API": true,
+      "TRACKER_ID": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": 0,
+      "no-useless-escape": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

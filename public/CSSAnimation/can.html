@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{background: #000;}
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas1" style="display: block;margin: 0 auto;border: 1px solid #aaa;"></canvas>
+<!--        <input type="range" id="scale-range" min="0.5" max="3.0" step="0.01" value="0.5" style="display: block;margin: 20px auto;"/>-->
+        <canvas id="canvas2" style="display: none;"></canvas>
+      <script>
+        var img=new Image();
+        var isMouseDown=false;
+        var can=document.getElementById("canvas1");
+        var context=can.getContext("2d");
+        
+        var scale;
+//        var slider=document.getElementById("scale-range"); 
+        
+        var can2=document.getElementById("canvas2");
+        var context2=can2.getContext("2d");
+        
+        window.onload=function(){
+            can.width=1000;
+            can.height=562;
+//            var scale=slider.value;
+            img.src="./img/can.jpg";   
+            img.onload=function(){
+                can2.width=img.width;
+                can2.height=img.height;
+                //原图与画布的比例
+                scale=img.width /can.width; 
+                 //把原图压缩到画布的大小
+                context.drawImage(img,0,0,can.width,can.height);
+                context2.drawImage(img,0,0);
+//                drawImageByScale(scale);
+//                slider.onmousemove=function(){
+//                    scale=slider.value;
+//                    drawImageByScale(scale);
+//                }
+            }
+            }
+            
+            function windowToCanvas(x,y){
+                var bbox=can.getBoundingClientRect();
+                return{x:x-bbox.left,y:y-bbox.top}
+            }
+            
+            can.onmousedown=function(e){
+                e.preventDefault();
+                var point=windowToCanvas(e.clientX,e.clientY);
+                isMouseDown=true;
+                drawCanvasWithMagnidier(true,point);
+            }
+                
+            can.onmousemove=function(e){
+                 e.preventDefault();
+                 if(isMouseDown==true){
+                     var point=windowToCanvas(e.clientX,e.clientY);
+                     drawCanvasWithMagnidier(true,point);
+                 }
+            } 
+            
+            can.onmouseup=function(e){
+                 e.preventDefault();
+                 isMouseDown=false;
+                 drawCanvasWithMagnidier(false);
+            }
+        
+            can.onmouseout=function(e){
+                e.preventDefault();
+                isMouseDown=false;
+                drawCanvasWithMagnidier(false);
+            }
+            
+            function drawCanvasWithMagnidier(isShowMagnifier,point){
+                context.clearRect(0,0,can.width,can.height);
+                context.drawImage(img,0,0,can.width,can.height);
+                if( isShowMagnifier == true){
+                    drawMagnifier(point);
+                }
+            }
+            
+            function  drawMagnifier(point){
+                var imageLG_cx=point.x*scale;
+                var imageLG_cy=point.y*scale;
+                 
+                var mr=200;//放大镜的半径
+                
+                var tx=point.x-mr;
+                var ty=point.y-mr;//鼠标的位置
+                
+                var sx=imageLG_cx-mr;
+                var sy=imageLG_cy-mr;//原图左上角的位置坐标
+                
+                context.save();
+                context.lineWidth=10.0;
+                context.strokeStyle="#069";//边框
+                
+                context.beginPath()
+                context.arc(point.x,point.y,mr,0,Math.PI*2);
+                context.stroke();//画圆
+                
+                context.clip();
+                
+                context.drawImage(img,sx,sy,2*mr,2*mr,tx,ty,2*mr,2*mr);
+                context.restore();
+            }
+            
+            
+            
+//            can2.width=600;
+//            can2.height=100;
+//            
+//            context2.font="bold 50px Arial";
+//            context2.fillStyle="rgba( 255, 255, 255, 0.5)";
+//            context2.textBaseline="middle";
+//            context2.fillText( "==xiangjiaoyinghan.com==", 20 , 50);
+//            
+//        
+//            function drawImageByScale(scale){
+//                var imageWidth=1000/scale;
+//                var imageHeight=562/scale;
+//                var dx=can.width/2-imageWidth/2;
+//                var dy=can.height/2-imageHeight/2;
+//                
+//                context.clearRect(0,0,can.width,can.height);
+//                context.drawImage(img,dx,dy,imageWidth,imageHeight,0,0,can.width,can.height);
+//                context.drawImage(can2, can.width-can2.width,can.height-can2.height);
+//            }
+
+        
+    </script>
+    </body>
+</html>

@@ -5,6 +5,7 @@ const dynConfig = require(`./${env['dirName']}/vue.config.js`)//根据环境变�
 
 module.exports = {
   outputDir: path.resolve(__dirname, '../', `./${env['baseUrl']}/${env['dirName']}/`),
-  baseUrl: `/${env['baseUrl']}/${env['dirName']}/`,
+  publicPath: `/${env['baseUrl']}/${env['dirName']}/`,
+  productionSourceMap: false,
   ...dynConfig,
 }

@@ -9,9 +9,10 @@ module.exports = {
   // baseUrl: `/${_baseUrl}/${_dirName}/`,
   pages: {
     [_dirName]: {
+      title: '虾球威大战方块精',
       entry: `./${_dirName}/main.js`,
       template: `./${_dirName}/index.html`,
-      filename: `index.html`,
+      filename: `index.html`
     }
   },
   configureWebpack: config => {

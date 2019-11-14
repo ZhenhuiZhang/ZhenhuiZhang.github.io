@@ -12,70 +12,50 @@
 			<p>ZhenhuiZhang.github.io</p>
 		</div>
 	</header>
-	<article class="content headWidth">
+	<article id="main-content" class="content headWidth">
 		<header class="contentHead"><span>任务列表</span></header>
-		<section>
-			<header class="alert-info small alert">第一阶段任务</header>
-			<ul class="task-list">
-				<li class="task"><a href="./public/task1.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">任务一：HTML及CSS练习</div>
-						</div>
-					</a></li>
-				<li class="task"><a href="./public/task2-post.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">任务二：通过HTML及CSS模拟报纸排版</div>
-						</div>
-					</a></li>
-				<li class="task"><a href="./public/task3-productIndex.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">任务三：实现常见的技术产品官网样式布局</div>
-						</div>
-					</a></li>
-				<li class="task"><a href="./public/CSSAnimation/index1.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">任务三：css Animation</div>
-						</div>
-					</a></li>
-			</ul>
-		</section>
-		<section>
-			<header class="alert-info small alert">Canvas Demo</header>
-			<ul class="task-list">
-				<li class="task"><a href="./public/feedfish/tinyheart.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">tinyheart鱼妈妈游戏</div>
-						</div>
-					</a></li>
-				<li class="task"><a href="./public/canvas_clock/123.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">Canvas时钟</div>
-						</div>
-					</a></li>
-				<li class="task"><a href="./public/startgirl/startgirl.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">startgirl</div>
-						</div>
-					</a></li>
-				<li class="task"><a href="./public/games/index.html" class="task-content">
-						<div class="task-info">
-							<div class="task-title">小游戏</div>
-						</div>
-					</a></li>
-			</ul>
-		</section>
-
-		<section>
-			<header class="alert-info small alert">Phaser Games</header>
-			<ul class="task-list">
-				<li class="task"><a href="/demo/phaser/" class="task-content">
-						<div class="task-info">
-							<div class="task-title">虾威与星星未解之谜</div>
-						</div>
-					</a></li>
-			</ul>
-		</section>
 	</article>
+	<script>
+		let mainContainer = document.querySelector('#main-content')
+		const sectionList = {
+			'第一阶段任务': [
+				{ title: '任务一：HTML及CSS练习', link: './public/task1.html' },
+				{ title: '任务二：通过HTML及CSS模拟报纸排版', link: './public/task2-post.html' },
+				{ title: '任务三：实现常见的技术产品官网样式布局', link: './public/task3-productIndex.html' },
+				{ title: '任务四：css Animation', link: './public/CSSAnimation/index1.html' },
+			],
+			'Canvas Demo': [
+				{ title: 'tinyheart鱼妈妈游戏', link: './public/feedfish/tinyheart.html' },
+				{ title: 'Canvas时钟', link: './public/canvas_clock/123.html' },
+				{ title: 'startgirl', link: './public/startgirl/startgirl.html' },
+				{ title: '小游戏', link: './public/games/index.html' }
+			],
+			'Phaser Games': [
+				{ title: '虾威与星星未解之谜', link: '/demo/phaser/' },
+				{ title: '虾球威大战方块精', link: '/demo/ashare/' }
+			]
+		}
+
+		let _container = document.createElement('div')
+		let _renderContent = ''
+		for (let i in sectionList) {
+			_renderContent += `<section>
+			<header class="alert-info small alert">${i}</header>
+			<ul class="task-list">`
+			_renderContent += ``
+			let _sectionName = i
+			for (let item of sectionList[i]) {
+				_renderContent += `<li class="task"><a href="${item['link']}" class="task-content">
+						<div class="task-info">
+							<div class="task-title">${item['title']}</div>
+						</div>
+					</a></li>`
+			}
+			_renderContent += '</ul></section>'
+		}
+		_container.innerHTML = _renderContent
+		mainContainer.appendChild(_container)
+	</script>
 </body>
 
 </html>

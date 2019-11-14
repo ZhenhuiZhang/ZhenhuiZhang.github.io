@@ -1,5 +1,5 @@
 const path = require('path')
-const CompressionWebpackPlugin = require('compression-webpack-plugin')
+// const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const env = require('./env')
 let commonPlugin = new CopyWebpackPlugin([

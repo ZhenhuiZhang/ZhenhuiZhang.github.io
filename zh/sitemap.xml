@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zhenhuizhang.github.io/zh/</loc>
-    <lastmod>2020-04-11T23:05:23+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhenhuizhang.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://zhenhuizhang.github.io/zh/"
-                />
-  </url>
-  
-  <url>
     <loc>https://zhenhuizhang.github.io/zh/posts/my-first-post/</loc>
     <lastmod>2020-04-11T23:05:23+08:00</lastmod>
   </url>
@@ -48,6 +33,56 @@
   </url>
   
   <url>
+    <loc>https://zhenhuizhang.github.io/zh/publication/book/</loc>
+    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/publication/</loc>
+    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/showcase/</loc>
+    <lastmod>2020-01-19T15:43:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/archive/</loc>
+    <lastmod>2019-10-19T11:44:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zhenhuizhang.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://zhenhuizhang.github.io/zh/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/publication/book/book_any_folder_name_1/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zhenhuizhang.github.io/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -59,6 +94,10 @@
                 hreflang="zh"
                 href="https://zhenhuizhang.github.io/zh/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/presentation/</loc>
   </url>
   
   <url>

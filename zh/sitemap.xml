@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zhenhuizhang.github.io/zh/</loc>
+    <lastmod>2020-04-11T23:05:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zhenhuizhang.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://zhenhuizhang.github.io/zh/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/posts/my-first-post/</loc>
+    <lastmod>2020-04-11T23:05:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/posts/</loc>
+    <lastmod>2020-04-11T23:05:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/tags/</loc>
+    <lastmod>2020-04-11T23:05:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zhenhuizhang.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://zhenhuizhang.github.io/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2020-04-11T23:05:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zhenhuizhang.github.io/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -17,20 +62,6 @@
   </url>
   
   <url>
-    <loc>https://zhenhuizhang.github.io/zh/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhenhuizhang.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://zhenhuizhang.github.io/zh/"
-                />
-  </url>
-  
-  <url>
     <loc>https://zhenhuizhang.github.io/zh/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -41,20 +72,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://zhenhuizhang.github.io/zh/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://zhenhuizhang.github.io/zh/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhenhuizhang.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://zhenhuizhang.github.io/zh/tags/"
                 />
   </url>
   

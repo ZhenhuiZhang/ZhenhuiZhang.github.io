@@ -12,6 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 11 Apr 2020 23:05:23 +0800</lastBuildDate>
     
         <atom:link href="https://zhenhuizhang.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -39,6 +40,30 @@
         
       
 
+      
+      <item>
+        <title>My First Post</title>
+        <link>https://zhenhuizhang.github.io/zh/posts/my-first-post/</link>
+        <pubDate>Sat, 11 Apr 2020 23:05:23 +0800</pubDate>
+        
+        <atom:modified>Sat, 11 Apr 2020 23:05:23 +0800</atom:modified>
+        <guid>https://zhenhuizhang.github.io/zh/posts/my-first-post/</guid>
+        <description>你好呀</description>
+        
+        <dc:creator>zzh</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>生活随笔</category>
+            
+          
+        
+        
+        
+      </item>
       
 
     

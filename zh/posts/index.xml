@@ -44,6 +44,47 @@
         
       </item>
       
+      <item>
+        <title>Python学习Day 1</title>
+        <link>https://zhenhuizhang.github.io/zh/posts/python-100-days/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        
+        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
+        <guid>https://zhenhuizhang.github.io/zh/posts/python-100-days/</guid>
+        <description>&lt;p&gt;2020年都过去了快半年了，貌似定下的目标都没开始去实践呢，咱得好好加把劲儿提升自己，去“老板”身边做个好的员工，&lt;/p&gt;
+&lt;p&gt;在github上面发现了一个repo&amp;mdash;&lt;a href=&#34;https://github.com/jackfrued/Python-100-Days&#34;&gt;Python-100-Days&lt;/a&gt;，感谢作者jackfrued细心的整理了这么多内容；今天开始，俺要借助该repo要开始系统学习一下python，拓展一下自己的技术栈。&lt;/p&gt;</description>
+        
+        <dc:creator>zzh</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>python</category>
+            
+          
+            
+              <category>Python学习</category>
+            
+          
+        
+        
+          
+            
+              <category>python</category>
+            
+          
+        
+        
+          
+            
+              <category>Themes Guide</category>
+            
+          
+        
+      </item>
+      
 
     
   </channel>

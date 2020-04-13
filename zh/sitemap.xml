@@ -53,6 +53,61 @@
   </url>
   
   <url>
+    <loc>https://zhenhuizhang.github.io/zh/categories/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zhenhuizhang.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://zhenhuizhang.github.io/zh/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/tags/python/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/categories/python/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/tags/python%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/posts/python-100-days/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/series/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zhenhuizhang.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://zhenhuizhang.github.io/zh/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zhenhuizhang.github.io/zh/series/themes-guide/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zhenhuizhang.github.io/zh/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url>
@@ -83,35 +138,7 @@
   </url>
   
   <url>
-    <loc>https://zhenhuizhang.github.io/zh/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhenhuizhang.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://zhenhuizhang.github.io/zh/categories/"
-                />
-  </url>
-  
-  <url>
     <loc>https://zhenhuizhang.github.io/zh/presentation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://zhenhuizhang.github.io/zh/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhenhuizhang.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://zhenhuizhang.github.io/zh/series/"
-                />
   </url>
   
 </urlset>
